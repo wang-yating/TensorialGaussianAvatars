@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style> .results-carousel .item img { width: 512px; height: 512px; } </style>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="3D Gaussian Head Avatars with Expressive Dynamic Appearances by Compact Tensorial Representations">
+  <meta name="keywords" content="3D Head Avatar, Gaussian Splatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Gaussian Head Avatars with Expressive Dynamic Appearances by Compact Tensorial Representations</title>
+
+  <style>
+    .custom-video-size {
+      width: 800px;
+      height: auto;
+    }
+    .responsive-video {
+      width: 800%;
+      height: auto;
+      max-width: 800px;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">3D Gaussian Head Avatars with Expressive Dynamic Appearances by Compact Tensorial Representations</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a>Yating Wang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://xuanwangvc.github.io/">Xuan Wang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://yiranran.github.io/">Ran Yi</a><sup>1</sup>,
+              </span>
+                <span class="author-block">
+                <a href="https://sites.google.com/site/yanbofan0124/">Yanbo Fan</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a>Jichen Hu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a>Jingcheng Zhu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a >Lizhuang Ma</a><sup>1</sup>
+              </span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University</span><br />
+              <span class="author-block"><sup>2</sup>AntGroup Research</span><br />
+            </div>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_3D_Gaussian_Head_Avatars_with_Expressive_Dynamic_Appearances_by_Compact_CVPR_2025_paper.pdf"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2504.14967"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ant-research/TensorialGaussianAvatar"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="teaser">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h3 class="title is-4">
+          </h3>
+          <div class="item">
+            <img src="./static/teaser.png" alt="Descriptive Alt Text" height="50%">
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent studies have combined 3D Gaussian and 3D Morphable Models (3DMM) to construct high-quality 3D head avatars. In this line of research, existing methods either fail to capture the dynamic textures or incur significant overhead in terms of runtime speed or storage space. To this end, we propose a novel method that addresses all the aforementioned demands. In specific, we introduce an expressive and compact representation that encodes texture-related attributes of the 3D Gaussians in the tensorial format. We store appearance of neutral expression in static tri-planes, and represents dynamic texture details for different expressions using lightweight 1D feature lines, which are then decoded into opacity offset relative to the neutral face. We further propose adaptive truncated opacity penalty and class-balanced sampling to improve generalization across different expressions. Experiments show this design enables accurate face dynamic details capturing while maintains real-time rendering and significantly reduces storage costs, thus broadening the applicability to more scenarios.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="columns is-centered">
+          <img src="./static/pipeline.png" class="interpolation-image" alt="Interpolate start reference image.">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Our goal is to reconstruct 3DGS head avatar with dynamic details, ensuring real-time rendering and minimized storage. We use a parametric face mesh to describe large-scale geometry motions, moving the bound Gaussian splats accordingly. A triplane stores view-dependent appearance in canonical space, while 1D feature lines are used for dynamic details per blendshape, allowing interpolation with expression coefficients. Finally, the geometry attributes of the splats, along with the canonical appearance and dynamic details, are combined to render the face image.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Novel View Synthesis</h2>
+    </div>
+    <div class="content has-text-justified">
+      We compare our method with GaussianAvatars, GaussianBlendshapes and GaussianHeadAvatars on novel view synthesis task.
+    </div>
+    <div class="hero-body">
+      <video id="replay-video"
+                 controls
+                 preload
+                 playsinline
+                 loop
+                 width="100%">
+            <source src="./static/nvs-074.mp4"
+                    type="video/mp4">
+          </video>
+      <!-- <video controls autoplay muted src="static/nvs-074.mp4"></video> -->
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Self-Reenactment</h2>
+    </div>
+    <div class="content has-text-justified">
+      We compare our method with GaussianAvatars, GaussianBlendshapes and GaussianHeadAvatars on Self-Reenactment task.
+    </div>
+    <div class="hero-body">
+          <video id="replay-video"
+                 controls
+                 preload
+                 playsinline
+                 loop
+                 width="100%">
+            <source src="./static/self_264-3.mp4"
+                    type="video/mp4">
+          </video>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@inproceedings{wang20253d,
+  title={3D Gaussian Head Avatars with Expressive Dynamic Appearances by Compact Tensorial Representations},
+  author={Wang, Yating and Wang, Xuan and Yi, Ran and Fan, Yanbo and Hu, Jichen and Zhu, Jingcheng and Ma, Lizhuang},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={21117--21126},
+  year={2025}
+}
+</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> for our website.
+            We sincerely appreciate Nerfies authors for their awesome templates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
